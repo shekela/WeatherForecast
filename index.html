@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+	<title>Weather</title>
+</head>
+<body>
+    <div id="Weather">
+    	<div class="TopSection">
+    		<div class="search">
+    	 	<input type="text" name="" class="search-button" id="cityInput">
+    	 	<button id="Submit" onclick="getValueInput();"><i class="fa-solid fa-magnifying-glass"></i></button>
+    	 </div>
+
+    	 <div class="dropdown">
+    	 	<div class="dropbtn">
+    	 			<h1  style="margin-top: 5px;">Forecasts</h1>
+    	 	</div>
+    	 
+    	 	<div class="dropdown-content">
+				  <a href="#" onclick="AfterDay(0);">After 1 day</a>
+				  <a href="#" onclick="AfterDay(1);">After 2 day</a>
+				  <a href="#" onclick="AfterDay(2);">After 3 day</a>
+				  <a href="#" onclick="AfterDay(3);">After 4 day</a>
+				  <a href="#" onclick="AfterDay(4);">After 5 day</a>
+				  <a href="#" onclick="AfterDay(5);">After 6 day</a>
+				  <a href="#" onclick="AfterDay(6);">After 7 day</a>
+				  <a href="#" onclick="AfterDay(7);">After 8 day</a>
+				  <a href="#" onclick="AfterDay(8);">After 9 day</a>
+				  <a href="#" onclick="AfterDay(9);">After 10 day</a>
+				  
+				  
+		    </div>
+    	 </div>
+    	</div>
+    	 
+
+
+    	 <div class="Forecast">
+    	 	<h1 id="Day">Day: </h1>
+    	 	<h1 class="city" id="city">Country: City</h1>
+    	 	<h1 class="Temp" id="Temp">Current Temperature:</h1>
+    	 	<h1 id="LowAndHigh">Low: High: </h1>
+    	 	<h1 class="Description" id="Description">Weather:</h1>
+    	 	<div class="img">
+    	 		<img src="none.jpg" id="Image">
+    	 	</div>
+    	 </div>
+    </div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
